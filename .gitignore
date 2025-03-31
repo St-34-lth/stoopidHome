@@ -1,3 +1,8 @@
 *.log
 .cache
 /mqtt_
+/project_devel/.vscode-server
+/project_devel/.pyenv
+/project_devel/.cache
+/project_devel/.python-version
+/project_devel/.ssh
