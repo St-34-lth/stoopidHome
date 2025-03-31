@@ -4,7 +4,7 @@ The system uses docker services for each of its components. A main compose file 
 
 If you wish to build them (ros and iot), use the included docker build files.
 These may be still unstable however so if you are interested in running the services, visit the below docker hub or use the compose to pull the images
-automagically.  
+automagically. You will need to download this repo and run the compose.yaml either way.
 
 https://hub.docker.com/repository/docker/st34lths0/iot_dev/general
 
