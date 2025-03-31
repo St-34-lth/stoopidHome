@@ -1,13 +1,13 @@
 services:
     iot-dev:
-        image: st34lths0/iot_dev:iot_dev
+        image: st34lths0/iot_dev:iot_dev_final
         container_name: iot_final
         tty: true
         working_dir: "/"
         environment:
             - DISPLAY=:100
         volumes:
-            - /home/absurdity/Desktop/project_files/project_devel/:/root/:Z
+            - ./project_files/project_devel/:/root/:Z
         entrypoint: ["/bin/bash", "-lc", "source /root/project_files/root/.bashrc && exec /bin/bash"]
         network_mode: host
         stdin_open: true
@@ -15,30 +15,26 @@ services:
             resources:
                 limits:
                     memory: 4g
-        devices:
-            - /dev/ttyUSB0
-            - /dev/ttyUSB1
+
     ros:
-        image: rosenv
+        image: st34lths0/iot_dev:ros_final
         container_name: ros
         network_mode: host
         entrypoint: ["/bin/bash","-lc", "exec /bin/bash" ]
         stdin_open: true
         volumes:
-        - /home/absurdity/Desktop/project_files/rosenv/:/root/host_data:rw,Z
-        - /home/absurdity/Desktop/project_files/rosenv/ssl:/root/stoopidHome/src/data_sink/ssl/:rw,Z
-        - /home/absurdity/Desktop/project_files/ORB_SLAM3/:/root/stoopidHome/src/ORB_SLAM3/:rw,Z
+        - ./rosenv/ssl:/root/stoopidHome/src/data_sink/ssl/:rw,Z
 
     mosquitto-broker:
         image: st34lths0/iot_dev:mqtt_final
         container_name: mqtt-broker
         volumes:
-        - /home/absurdity/Desktop/project_files/mqtt/config/:/mosquitto/config/:rw,Z
-        - /home/absurdity/Desktop/project_files/mqtt/data/:/mosquitto/data/:rw,Z
-        - /home/absurdity/Desktop/project_files/mqtt/log/:/mosquitto/log/:rw,Z
-        - /home/absurdity/Desktop/project_files/mqtt/ca.crt:/mosquitto/ca.crt:rw,Z
-        - /home/absurdity/Desktop/project_files/mqtt/server.key:/mosquitto/server.key:rw,Z
-        - /home/absurdity/Desktop/project_files/mqtt/server.crt:/mosquitto/server.crt:rw,Z  
+        - /mqtt/config/:/mosquitto/config/:rw,Z
+        - /mqtt/data/:/mosquitto/data/:rw,Z
+        - /mqtt/log/:/mosquitto/log/:rw,Z
+        - /mqtt/ca.crt:/mosquitto/ca.crt:rw,Z
+        - /mqtt/server.key:/mosquitto/server.key:rw,Z
+        - /mqtt/server.crt:/mosquitto/server.crt:rw,Z
         network_mode: host
         command: mosquitto -c /mosquitto/config/mosquitto.conf -v
         restart: unless-stopped
@@ -50,7 +46,7 @@ services:
         environment:
             - DISPLAY:101
         volumes:
-        - /home/absurdity/Desktop/project_files/HA/config/:/config:Z
+        - ./HA/config/:/config:Z
         - /etc/localtime:/etc/localtime:ro
         - /run/dbus:/run/dbus:ro
         restart: unless-stopped
@@ -59,4 +55,4 @@ services:
         deploy:
             resources:
                 limits:
-                    memory: 4g
+                    memory: 2g
