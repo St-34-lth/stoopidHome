@@ -1,0 +1,54 @@
+services:
+    iot-dev:
+        image: iot_final:dev
+        container_name: iot_final
+        tty: true
+        working_dir: "/"
+        environment:
+            - DISPLAY=:100
+        volumes:
+            # - ~/docker_data:/root/host_data
+            - ~/Desktop/project_files/project_devel/:/root/
+        entrypoint: ["/bin/bash", "-lc", "source /root/project_files/root/.bashrc && exec /bin/bash"]
+        network_mode: host
+        stdin_open: true
+        deploy:
+            resources:
+                limits:
+                    memory: 4g
+        devices:
+            - /dev/ttyUSB0
+            - /dev/ttyUSB1
+
+    mosquitto-broker:
+        image: eclipse-mosquitto:latest
+        # hostname: mqtt-broker.local 
+        container_name: mqtt-broker
+        volumes:
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/config/:/mosquitto/config:rw 
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/data/:/mosquitto/data:rw
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/log/:/mosquitto/log:rw
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/mqtt_passwd:/mosquitto/passwd:rw
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/ca.crt:/mosquitto/ca.crt:rw
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/server.key:/mosquitto/server.key:rw
+        - /media/HDD/git/Final_project/project_devel/project_files/mqtt/server.crt:/mosquitto/server.crt:rw    
+        network_mode: host
+        restart: unless-stopped
+    
+
+    homeassistant:
+        container_name: homeassistant
+        image: "homeassistant/home-assistant"
+        environment:
+            - DISPLAY:101
+        volumes:
+        - /media/HDD/git/Final_project/project_devel/project_files/HA/config/:/config
+        - /etc/localtime:/etc/localtime:ro
+        - /run/dbus:/run/dbus:ro
+        restart: unless-stopped
+        privileged: true
+        network_mode: host
+        deploy:
+            resources:
+                limits:
+                    memory: 4g

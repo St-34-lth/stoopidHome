@@ -1,0 +1,2 @@
+data_sink
+-DCATKIN_DEVEL_PREFIX=/root/stoopidHome/devel -DCMAKE_INSTALL_PREFIX=/root/stoopidHome/install -G Unix Makefiles

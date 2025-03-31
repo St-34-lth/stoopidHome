@@ -1,0 +1,981 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "script.serve_food": [
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "5fa44f5d1b7fc775931e4586f616dc19",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T14:00:35.738679+00:00",
+            "finish": "2025-03-30T14:00:35.741842+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-30T14:00:35.739323+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_food",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-23T07:51:52.781677+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Food"
+                    },
+                    "last_changed": "2025-03-29T19:14:15.766157+00:00",
+                    "last_reported": "2025-03-29T19:14:15.766157+00:00",
+                    "last_updated": "2025-03-29T19:14:15.766157+00:00",
+                    "context": {
+                      "id": "01JQHN70JPJJVMS10S0V3V7H95",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "context": {
+                    "id": "01JQKNNCMTDADE0C7MNB91K6NF",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "STEPPER_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "STEPPER_ON"
+                }
+              }
+            ],
+            "alias": "Serve Food",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQKNNCMTDADE0C7MNB91K6NF",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "5fa44f5d1b7fc775931e4586f616dc19",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T14:00:35.738679+00:00",
+            "finish": "2025-03-30T14:00:35.741842+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "d7f085555c25d15a3356cf54d2327d79",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T14:00:38.292305+00:00",
+            "finish": "2025-03-30T14:00:38.293455+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-30T14:00:38.292483+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_food",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-30T14:00:35.739039+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Food"
+                    },
+                    "last_changed": "2025-03-30T14:00:35.741642+00:00",
+                    "last_reported": "2025-03-30T14:00:35.741642+00:00",
+                    "last_updated": "2025-03-30T14:00:35.741642+00:00",
+                    "context": {
+                      "id": "01JQKNNCMTDADE0C7MNB91K6NF",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQKNNF4MMRKD0AGNCT16TZQK",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "STEPPER_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "STEPPER_ON"
+                }
+              }
+            ],
+            "alias": "Serve Food",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQKNNF4MMRKD0AGNCT16TZQK",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "d7f085555c25d15a3356cf54d2327d79",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T14:00:38.292305+00:00",
+            "finish": "2025-03-30T14:00:38.293455+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "afa140562f5765ee501c115f09b20740",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T15:38:31.076809+00:00",
+            "finish": "2025-03-30T15:38:31.079921+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-30T15:38:31.077184+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_food",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-30T14:00:38.292378+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Food"
+                    },
+                    "last_changed": "2025-03-30T14:00:38.293247+00:00",
+                    "last_reported": "2025-03-30T14:00:38.293247+00:00",
+                    "last_updated": "2025-03-30T14:00:38.293247+00:00",
+                    "context": {
+                      "id": "01JQKNNF4MMRKD0AGNCT16TZQK",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQKV8P947H4VARZ8KBYA5G9K",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "STEPPER_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "STEPPER_ON"
+                }
+              }
+            ],
+            "alias": "Serve Food",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQKV8P947H4VARZ8KBYA5G9K",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "afa140562f5765ee501c115f09b20740",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-30T15:38:31.076809+00:00",
+            "finish": "2025-03-30T15:38:31.079921+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "057c5f48701351555c97e9ba98a0c552",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:34.526388+00:00",
+            "finish": "2025-03-31T05:11:34.527636+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:11:34.526611+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_food",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-30T15:38:31.076934+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Food"
+                    },
+                    "last_changed": "2025-03-30T15:38:31.079248+00:00",
+                    "last_reported": "2025-03-30T15:38:31.079248+00:00",
+                    "last_updated": "2025-03-30T15:38:31.079248+00:00",
+                    "context": {
+                      "id": "01JQKV8P947H4VARZ8KBYA5G9K",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQN9SEBYARAQYAE67VGD14XH",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "STEPPER_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "STEPPER_ON"
+                }
+              }
+            ],
+            "alias": "Serve Food",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQN9SEBYARAQYAE67VGD14XH",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "057c5f48701351555c97e9ba98a0c552",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:34.526388+00:00",
+            "finish": "2025-03-31T05:11:34.527636+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "3a35e5e329e415e363f292ef3f21222e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:15:44.507035+00:00",
+            "finish": "2025-03-31T05:15:44.508114+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:15:44.507182+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_food",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:34.526477+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Food"
+                    },
+                    "last_changed": "2025-03-31T05:11:34.527455+00:00",
+                    "last_reported": "2025-03-31T05:11:34.527455+00:00",
+                    "last_updated": "2025-03-31T05:11:34.527455+00:00",
+                    "context": {
+                      "id": "01JQN9SEBYARAQYAE67VGD14XH",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQNA12FT3EJNWCZ3Y2W62ZX5",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "STEPPER_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "STEPPER_ON"
+                }
+              }
+            ],
+            "alias": "Serve Food",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQNA12FT3EJNWCZ3Y2W62ZX5",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "3a35e5e329e415e363f292ef3f21222e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:15:44.507035+00:00",
+            "finish": "2025-03-31T05:15:44.508114+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_food"
+        }
+      }
+    ],
+    "script.serve_water": [
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "b6bf794e9214624edd9014db2a822a46",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:21.920471+00:00",
+            "finish": "2025-03-31T05:11:21.922552+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:11:21.920873+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_water",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:18.818851+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Water"
+                    },
+                    "last_changed": "2025-03-31T05:11:18.821752+00:00",
+                    "last_reported": "2025-03-31T05:11:18.821752+00:00",
+                    "last_updated": "2025-03-31T05:11:18.821752+00:00",
+                    "context": {
+                      "id": "01JQN9RZ11ZH8K4BVCNMGV4QZW",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQN9S220Z9Q6KG1140QG0BFR",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "PUMP_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "PUMP_ON"
+                }
+              }
+            ],
+            "alias": "Serve Water",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQN9S220Z9Q6KG1140QG0BFR",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "b6bf794e9214624edd9014db2a822a46",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:21.920471+00:00",
+            "finish": "2025-03-31T05:11:21.922552+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "10a291e6788b94c97559e77fde746332",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:23.524157+00:00",
+            "finish": "2025-03-31T05:11:23.526001+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:11:23.524578+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_water",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:21.920706+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Water"
+                    },
+                    "last_changed": "2025-03-31T05:11:21.922158+00:00",
+                    "last_reported": "2025-03-31T05:11:21.922158+00:00",
+                    "last_updated": "2025-03-31T05:11:21.922158+00:00",
+                    "context": {
+                      "id": "01JQN9S220Z9Q6KG1140QG0BFR",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQN9S3M4ANZQCGKFYPWJ8Q51",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "PUMP_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "PUMP_ON"
+                }
+              }
+            ],
+            "alias": "Serve Water",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQN9S3M4ANZQCGKFYPWJ8Q51",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "10a291e6788b94c97559e77fde746332",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:23.524157+00:00",
+            "finish": "2025-03-31T05:11:23.526001+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "65bd3613e0563bc341c6cc8107a1d600",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:25.848067+00:00",
+            "finish": "2025-03-31T05:11:25.849412+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:11:25.848342+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_water",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:23.524440+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Water"
+                    },
+                    "last_changed": "2025-03-31T05:11:23.525684+00:00",
+                    "last_reported": "2025-03-31T05:11:23.525684+00:00",
+                    "last_updated": "2025-03-31T05:11:23.525684+00:00",
+                    "context": {
+                      "id": "01JQN9S3M4ANZQCGKFYPWJ8Q51",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQN9S5WR3XZJRM0BRABBFSWG",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "PUMP_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "PUMP_ON"
+                }
+              }
+            ],
+            "alias": "Serve Water",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQN9S5WR3XZJRM0BRABBFSWG",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "65bd3613e0563bc341c6cc8107a1d600",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:25.848067+00:00",
+            "finish": "2025-03-31T05:11:25.849412+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "f22914422b8ec9df01525231637af85c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:32.071843+00:00",
+            "finish": "2025-03-31T05:11:32.075270+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:11:32.072429+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_water",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:25.848234+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Water"
+                    },
+                    "last_changed": "2025-03-31T05:11:25.849206+00:00",
+                    "last_reported": "2025-03-31T05:11:25.849206+00:00",
+                    "last_updated": "2025-03-31T05:11:25.849206+00:00",
+                    "context": {
+                      "id": "01JQN9S5WR3XZJRM0BRABBFSWG",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQN9SBZ76RB6CMZR60GGZ8B4",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "PUMP_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "PUMP_ON"
+                }
+              }
+            ],
+            "alias": "Serve Water",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQN9SBZ76RB6CMZR60GGZ8B4",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "f22914422b8ec9df01525231637af85c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:11:32.071843+00:00",
+            "finish": "2025-03-31T05:11:32.075270+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "sequence/0",
+          "run_id": "f3c6465409ab46a7c92337ec3a43a6de",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:15:40.983257+00:00",
+            "finish": "2025-03-31T05:15:40.984431+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water",
+          "trace": {
+            "sequence/0": [
+              {
+                "path": "sequence/0",
+                "timestamp": "2025-03-31T05:15:40.983431+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "script.serve_water",
+                    "state": "off",
+                    "attributes": {
+                      "last_triggered": "2025-03-31T05:11:32.072176+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Serve Water"
+                    },
+                    "last_changed": "2025-03-31T05:11:32.074653+00:00",
+                    "last_reported": "2025-03-31T05:11:32.074653+00:00",
+                    "last_updated": "2025-03-31T05:11:32.074653+00:00",
+                    "context": {
+                      "id": "01JQN9SBZ76RB6CMZR60GGZ8B4",
+                      "parent_id": null,
+                      "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                    }
+                  },
+                  "context": {
+                    "id": "01JQNA0Z1QXGGW968ZMD35ZVBB",
+                    "parent_id": null,
+                    "user_id": "1221e9d40150499b9b76ea28c0127aee"
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "retain": true,
+                      "topic": "painlessMesh/to/2735795353",
+                      "payload": "PUMP_ON"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "sequence": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "retain": true,
+                  "topic": "painlessMesh/to/2735795353",
+                  "payload": "PUMP_ON"
+                }
+              }
+            ],
+            "alias": "Serve Water",
+            "description": ""
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JQNA0Z1QXGGW968ZMD35ZVBB",
+            "parent_id": null,
+            "user_id": "1221e9d40150499b9b76ea28c0127aee"
+          }
+        },
+        "short_dict": {
+          "last_step": "sequence/0",
+          "run_id": "f3c6465409ab46a7c92337ec3a43a6de",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-03-31T05:15:40.983257+00:00",
+            "finish": "2025-03-31T05:15:40.984431+00:00"
+          },
+          "domain": "script",
+          "item_id": "serve_water"
+        }
+      }
+    ]
+  }
+}

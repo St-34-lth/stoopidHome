@@ -1,0 +1,59 @@
+ekf_filter_node:
+  frequency: 30            # Frequency in Hz
+  sensor_timeout: 0.1       # Timeout for sensor inputs
+  
+  # Pose covariance settings
+  imu0: imu/data_raw        # Topic to listen to for IMU data
+  imu0_config: [false, false, false,   # X, Y, Z position (from IMU - not used)
+                true, true, true,      # Roll, Pitch, Yaw (from IMU)
+                false, false, false,   # X, Y, Z velocity
+                true, true, true]      # X, Y, Z acceleration (from IMU)
+                
+  imu0_differential: false
+  imu0_relative: true
+
+  # Covariance matrices for the IMU data. You can adjust these depending on the noise characteristics.
+  imu0_queue_size: 10
+  imu0_remove_gravitational_acceleration: true
+  imu0_linear_acceleration_rejection_threshold: 0.8  # Reject if the acceleration is too high (noise filtering)
+
+  # IMU Covariances - based on the example data you provided
+  imu0_pose_rejection_threshold: 0.8     # Reject if orientation change exceeds this
+  imu0_twist_rejection_threshold: 0.8    # Reject angular velocity if it exceeds this
+  imu0_acceleration_rejection_threshold: 0.8  # Reject acceleration data above this threshold
+  
+  # Covariances: adjust these values according to the actual sensor performance
+  imu0_twist_covariance: [0.02, 0, 0, 0, 0, 0,   # Angular velocity covariance
+                          0, 0.02, 0, 0, 0, 0,
+                          0, 0, 0.02, 0, 0, 0,
+                          0, 0, 0, 0.02, 0, 0,
+                          0, 0, 0, 0, 0.02, 0,
+                          0, 0, 0, 0, 0, 0.02]
+  
+  imu0_linear_acceleration_covariance: [0.04, 0, 0,   # Linear acceleration covariance
+                                        0, 0.04, 0,
+                                        0, 0, 0.04]
+  
+  imu0_orientation_covariance: [0.01, 0, 0,   # Orientation covariance for the EKF
+                                0, 0.01, 0,
+                                0, 0, 0.01]
+
+  # Process noise covariance for state estimation (this influences how quickly the filter reacts to changes)
+  process_noise_covariance: [0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0.05, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0, 0,
+                             0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, 0]
+
+  # Publish estimated state to the /odometry/filtered topic
+  odom_frame: odom
+  base_link_frame: base_link
+  world_frame: odom
+  map_frame: map
+
+  publish_tf: true

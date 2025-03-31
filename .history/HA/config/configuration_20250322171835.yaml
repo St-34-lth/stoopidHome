@@ -1,0 +1,66 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+input_button:
+  serve_water:
+    name: "Fill pet water tray"
+    icon: mdi:gesture-tap
+    # action: input_button.pressf
+    # target: scripts.serve_water
+  serve_food:
+    name: "Fill pet food tray"
+    icon: mdi:gesture-tap  
+    
+mqtt:
+  
+  sensor:
+    - name: "Temperature"
+      unique_id: sensor_node1
+      state_topic: "painlessMesh/from/2382067463"
+      value_template: "{{ value_json[0]. }}"
+      unit_of_measurement: "°C"
+      icon: mdi:thermometer
+    # - name: "Humidity"
+    #   state_topic: "painlessMesh/from/2382067463"
+    #   unit_of_measurement: "%"
+    #   value_template: "{{ value_json[1].Humidity }}"
+    #   icon: mdi:water-percent
+
+  #   - name: "Humidity"
+  #     unique_id: "humidity_sensor_node2382067463"
+  #     state_topic: "painlessMesh/from/2382067463"
+  #     value_template: "{{ value_json[1].data.Humidity }}"
+  #     unit_of_measurement: "%"
+  #     icon: mdi:water-percent
+
+  #   - name: "Water feeding level"
+  #     unique_id: "level_sensor_node2735795353"
+  #     state_topic: "painlessMesh/from/2735795353"
+  #     value_template: "{{ (value_json[1].data.waterLevel | float / 400) * 100 | round(2) }}"
+  #     unit_of_measurement: "%"
+  #     icon: mdi:water-percent
+
+
+  #   - name: "Flame Sensor Value"
+  #     unique_id: "flame_sensor_node2382067463"
+  #     state_topic: "painlessMesh/from/2382067463"
+  #     value_template: "{{ value_json[1].data.fireValue }}"
+  #     unit_of_measurement: " "
+  #     icon: mdi:fire
+  
+  # binary_sensor:
+  #     name: "Flame Detected"
+  #     unique_id: "sensor_node2382067463"
+  #     state_topic: "painlessMesh/from/2382067463"
+  #     value_template: "{{ 'ON' if value_json[1].data.fireValue < 800 else 'OFF' }}"
+  #     device_class: safety
+    

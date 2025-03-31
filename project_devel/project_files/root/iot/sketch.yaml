@@ -1,0 +1,21 @@
+sketch:
+  name: stoopidHome
+  location: ~/project_files/root/iot_testNode
+  default_fqbn: esp32:esp32:esp32dev
+  default_port: /dev/ttyUSB0
+
+dependencies:
+  platform: esp8266:esp8266:nodemcuv2
+  core: esp8266
+
+build:
+  optimize: true 
+  debug: true 
+  output_dir: build
+
+monitor:
+  baudrate: 115200
+  timestamp: true 
+
+
+

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"person.stoopidhome","state":"unknown","attributes":{"editable":true,"id":"stoopidhome","device_trackers":[],"user_id":"05439653243b45de8c733ac425ade6ae","friendly_name":"stoopidhome"},"last_changed":"2025-03-29T19:14:15.172817+00:00","last_reported":"2025-03-29T19:14:16.052816+00:00","last_updated":"2025-03-29T19:14:16.052816+00:00","context":{"id":"01JQHN70VMPQ236CDJ6X7C6E60","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"person.stoopidhome_2","state":"unknown","attributes":{"editable":true,"id":"stoopidhome_2","device_trackers":[],"user_id":"1221e9d40150499b9b76ea28c0127aee","friendly_name":"stoopidHome"},"last_changed":"2025-03-29T19:14:15.173044+00:00","last_reported":"2025-03-29T19:14:16.052841+00:00","last_updated":"2025-03-29T19:14:16.052841+00:00","context":{"id":"01JQHN70VMMFVN2K47D9ASA32P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-03-29T19:14:15.764954+00:00","last_reported":"2025-03-29T19:14:15.764954+00:00","last_updated":"2025-03-29T19:14:15.764954+00:00","context":{"id":"01JQHN70JM9R4WM74ECNJFCKTZ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"script.serve_water","state":"off","attributes":{"last_triggered":"2025-03-31T05:15:40.983319+00:00","mode":"single","current":0,"friendly_name":"Serve Water"},"last_changed":"2025-03-31T05:15:40.984219+00:00","last_reported":"2025-03-31T05:15:40.984219+00:00","last_updated":"2025-03-31T05:15:40.984219+00:00","context":{"id":"01JQNA0Z1QXGGW968ZMD35ZVBB","parent_id":null,"user_id":"1221e9d40150499b9b76ea28c0127aee"}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"script.serve_food","state":"off","attributes":{"last_triggered":"2025-03-31T05:15:44.507083+00:00","mode":"single","current":0,"friendly_name":"Serve Food"},"last_changed":"2025-03-31T05:15:44.507915+00:00","last_reported":"2025-03-31T05:15:44.507915+00:00","last_updated":"2025-03-31T05:15:44.507915+00:00","context":{"id":"01JQNA12FT3EJNWCZ3Y2W62ZX5","parent_id":null,"user_id":"1221e9d40150499b9b76ea28c0127aee"}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"input_button.serve_water","state":"2025-01-20T09:04:48.305828+00:00","attributes":{"editable":false,"icon":"mdi:gesture-tap","friendly_name":"Fill pet water tray"},"last_changed":"2025-03-29T19:14:15.789552+00:00","last_reported":"2025-03-29T19:14:15.789552+00:00","last_updated":"2025-03-29T19:14:15.789552+00:00","context":{"id":"01JQHN70KDSM3M9396ZT1N0N3N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"input_button.serve_food","state":"2025-01-20T09:04:49.013199+00:00","attributes":{"editable":false,"icon":"mdi:gesture-tap","friendly_name":"Fill pet food tray"},"last_changed":"2025-03-29T19:14:15.789737+00:00","last_reported":"2025-03-29T19:14:15.789737+00:00","last_updated":"2025-03-29T19:14:15.789737+00:00","context":{"id":"01JQHN70KD11YFKNPTA2EQ7RGX","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.flame_detected","state":"off","attributes":{"device_class":"safety","friendly_name":"Flame Detected"},"last_changed":"2025-03-31T06:08:39.341528+00:00","last_reported":"2025-03-31T06:08:39.341528+00:00","last_updated":"2025-03-31T06:08:39.341528+00:00","context":{"id":"01JQND1YXDF8JCQ1B3Z3XG9X7Q","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.intruder_detected_2","state":"unavailable","attributes":{"device_class":"motion","friendly_name":"Intruder Detected"},"last_changed":"2025-03-31T05:33:01.941911+00:00","last_reported":"2025-03-31T05:33:01.941911+00:00","last_updated":"2025-03-31T05:33:01.941911+00:00","context":{"id":"01JQNB0QKNCDKX4ENJGSGBF0Q1","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.pet_detected","state":"unavailable","attributes":{"device_class":"motion","friendly_name":"Pet Detected"},"last_changed":"2025-03-31T05:33:06.941183+00:00","last_reported":"2025-03-31T05:33:06.941183+00:00","last_updated":"2025-03-31T05:33:06.941183+00:00","context":{"id":"01JQNB0WFXGKB70N5277DE7CJZ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.temperature","state":"24","attributes":{"unit_of_measurement":"°C","icon":"mdi:thermometer","friendly_name":"Temperature"},"last_changed":"2025-03-31T06:08:39.341723+00:00","last_reported":"2025-03-31T06:08:39.341723+00:00","last_updated":"2025-03-31T06:08:39.341723+00:00","context":{"id":"01JQND1YXDQ7W388T06ZHJ1QRT","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "24",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.humidity","state":"50","attributes":{"unit_of_measurement":"%","icon":"mdi:water-percent","friendly_name":"Humidity"},"last_changed":"2025-03-31T06:08:39.341652+00:00","last_reported":"2025-03-31T06:08:39.341652+00:00","last_updated":"2025-03-31T06:08:39.341652+00:00","context":{"id":"01JQND1YXD1BQ87KCG6JXZSR8Q","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "50",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.flame_sensor_value","state":"1024","attributes":{"unit_of_measurement":" ","icon":"mdi:fire","friendly_name":"Flame Sensor Value"},"last_changed":"2025-03-31T05:14:09.375993+00:00","last_reported":"2025-03-31T05:14:09.375993+00:00","last_updated":"2025-03-31T05:14:09.375993+00:00","context":{"id":"01JQN9Y5JZSSHC8MX5GZ26RMRF","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "1024",
+        "native_unit_of_measurement": " "
+      },
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.water_feeding_level","state":"59.0","attributes":{"unit_of_measurement":"%","icon":"mdi:water-percent","friendly_name":"Water feeding level"},"last_changed":"2025-03-31T06:08:36.861032+00:00","last_reported":"2025-03-31T06:08:36.861032+00:00","last_updated":"2025-03-31T06:08:36.861032+00:00","context":{"id":"01JQND1WFX6R21RQQA31A7M2RX","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "59.0",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-03-31T06:08:41.898546+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.intruder_detected","state":"unknown","attributes":{"device_class":"safety","friendly_name":"Intruder Detected"},"last_changed":"2025-03-29T19:16:36.548870+00:00","last_reported":"2025-03-29T19:16:36.548987+00:00","last_updated":"2025-03-29T19:16:36.548870+00:00","context":{"id":"01JQHNBA24QM8D07E8FB4XW83N","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-29T19:21:03.306560+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.window_contact_sensor","state":"unknown","attributes":{"device_class":"opening","friendly_name":"Window Contact Sensor"},"last_changed":"2025-03-29T19:21:03.308962+00:00","last_reported":"2025-03-29T19:21:03.308962+00:00","last_updated":"2025-03-29T19:21:03.308962+00:00","context":{"id":"01JQHNKEJC8NRTNPQEYYHTV92B","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-03-29T19:22:19.607498+00:00"
+    }
+  ]
+}

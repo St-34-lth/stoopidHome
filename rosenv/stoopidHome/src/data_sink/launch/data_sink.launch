@@ -1,0 +1,36 @@
+<launch>
+  <!-- Include rosbridge for websocket communication -->
+  <include file="/opt/ros/noetic/share/rosbridge_server/launch/rosbridge_websocket.launch"/> 
+
+  <!-- Launch various nodes for data processing -->
+  <node pkg="data_sink" name="imu_node" type="imu_node.py" output="screen" />
+
+  <!-- Reminder Node -->
+  <node pkg="data_sink" name="reminder_node" type="reminder_node.py" output="screen" />
+
+  <!-- Complementary Filter -->
+  <include file="$(find data_sink)/launch/complementary_filter.launch" />
+
+  <!-- IMU Heading Node -->
+  <node pkg="data_sink" name="imu_hdg_node" type="imu_heading_node.py" output="screen"/>
+
+  <!-- EKF Localization -->
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_node" output="screen">
+    <param name="use_sim_time" value="false"/>
+    <param name="yaml_cfg_file" value="$(find data_sink)/launch/ekf.yaml"/>
+  </node>
+
+  <!-- IMU Speed Node -->
+  <node pkg="data_sink" type="imu_speed_node.py" name="odom_node" output="screen"/>
+
+  <!-- Web Video Server to Stream Video from ROS Topics -->
+  <node name="web_video_server" pkg="web_video_server" type="web_video_server" output="screen">
+    <!-- Set the port for accessing the video stream -->
+    <param name="port" value="9093"/>
+    <!-- Set the topic to stream from the existing video feed -->
+    <param name="ros_topic" value="/camera/image_raw"/>
+  </node>
+
+
+  
+</launch>
